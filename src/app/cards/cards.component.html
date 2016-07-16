@@ -1,0 +1,38 @@
+<p>
+  cards works!
+</p>
+
+
+<select name="cards" id="cards" [(ngModel)] = "selectedCards[1]" (ngModelChange) = "selectBoxChanged()">
+  <option label=" "></option>
+  <option *ngFor="let card of cards">
+    {{card.name}}
+  </option>
+</select>
+<select name="cards" id="cards" [(ngModel)] = "selectedCards[2]" (ngModelChange) = "selectBoxChanged()">
+  <option *ngFor="let card of cards">
+    {{card.name}}
+  </option>
+</select>
+<select name="cards" id="cards" [(ngModel)] = "selectedCards[3]" (ngModelChange) = "selectBoxChanged()">
+  <option *ngFor="let card of cards">
+    {{card.name}}
+  </option>
+</select>
+<select name="cards" id="cards" [(ngModel)] = "selectedCards[4]" (ngModelChange) = "selectBoxChanged()">
+  <option *ngFor="let card of cards">
+    {{card.name}}
+  </option>
+</select>
+
+
+<br>
+  {{ selectedCards[1] }}
+<br>
+  {{ selectedCards[2] }}
+<br>
+  {{ selectedCards[3] }}
+<br>
+  {{ selectedCards[4] }}
+<br>
+  {{ selectedCards[5] }}
